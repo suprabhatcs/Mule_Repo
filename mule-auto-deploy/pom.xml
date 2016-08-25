@@ -31,7 +31,7 @@
 		        <username>suprabhat-acc</username>
 		        <password>Acc@123</password>
 		        <redeploy>true</redeploy>
-		        <environment>prod</environment>
+		        <environment>Production</environment>
 		    </configuration>
 		    <executions>
 		        <execution>

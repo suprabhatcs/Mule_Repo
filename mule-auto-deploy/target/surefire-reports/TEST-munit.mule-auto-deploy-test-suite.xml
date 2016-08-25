@@ -1,4 +1,4 @@
-<testsuite name="mule-auto-deploy-test-suite" time="0.249" failures="0" errors="0" skipped="0" tests="1">
+<testsuite name="mule-auto-deploy-test-suite" time="0.235" failures="0" errors="0" skipped="0" tests="1">
   <properties>
     <property key="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property key="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_73\jre\bin"/>
@@ -62,5 +62,5 @@
     <property key="sun.desktop" value="windows"/>
     <property key="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.249" name="mule-auto-deploy-test-suite-mule-auto-deployFlowTest" classname="mule-auto-deploy-test-suite"/>
+  <testcase time="0.235" name="mule-auto-deploy-test-suite-mule-auto-deployFlowTest" classname="mule-auto-deploy-test-suite"/>
 </testsuite>
