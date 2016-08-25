@@ -20,6 +20,29 @@
 
 	<build>
 		<plugins>
+		<plugin>
+		    <groupId>org.mule.tools.maven</groupId>
+		    <artifactId>mule-maven-plugin</artifactId>
+		    <version>2.1.1</version>
+		    <configuration>
+		        <deploymentType>cloudhub</deploymentType>
+		         <!-- muleVersion is the runtime version as it appears on the CloudHub interface -->
+		        <muleVersion>3.8.0</muleVersion>
+		        <username>suprabhat-acc</username>
+		        <password>Acc@123</password>
+		        <redeploy>true</redeploy>
+		        <environment>Production</environment>
+		    </configuration>
+		    <executions>
+		        <execution>
+		            <id>deploy</id>
+		            <phase>deploy</phase>
+		            <goals>
+		                <goal>deploy</goal>
+		            </goals>
+		        </execution>
+		    </executions>
+		</plugin>	
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-app-maven-plugin</artifactId>
@@ -98,33 +121,33 @@
 	<!-- Mule Dependencies -->
 	<dependencies>
 		<!-- Xml configuration -->
-		<dependency>
+	<!--  	<dependency>
         	<groupId>com.mulesoft.muleesb</groupId>
 			<artifactId>mule-core-ee</artifactId>
 			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- Xml configuration -->
+		<!-- Xml configuration 
 		<dependency>
 			<groupId>com.mulesoft.muleesb.modules</groupId>
 			<artifactId>mule-module-spring-config-ee</artifactId>
 			<version>${mule.version}</version>
 			<scope>provided</scope>
-		</dependency>
+		</dependency> -->
 		<!-- Mule Transports -->
-		<dependency>
+	<!-- <dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-file</artifactId>
 			<version>${mule.version}</version>
 			<scope>provided</scope>
-		</dependency>
+		</dependency>  -->	
 		<dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-http</artifactId>
 			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
+	<!--  <dependency>
         	<groupId>com.mulesoft.muleesb.transports</groupId>
 			<artifactId>mule-transport-jdbc-ee</artifactId>
 			<version>${mule.version}</version>
@@ -141,7 +164,7 @@
 			<artifactId>mule-transport-vm</artifactId>
 			<version>${mule.version}</version>
 			<scope>provided</scope>
-		</dependency>
+		</dependency>  -->	
 		<!-- Mule Modules -->
 		<dependency>
 			<groupId>org.mule.modules</groupId>
