@@ -1,5 +1,5 @@
 SUCCESS - Test mule-auto-deploy-test-suite-mule-auto-deployFlowTest finished Successfully.
 
 ===================================================================================
-Number of tests run: 1 - Failed: 0 - Errors: 0 - Skipped: 0 - Time elapsed: 0.235ms
+Number of tests run: 1 - Failed: 0 - Errors: 0 - Skipped: 0 - Time elapsed: 0.275ms
 ===================================================================================
