@@ -33,6 +33,7 @@
 		        <username>suprabhat-p2m</username>
 		        <password>${password}</password>
 		        <redeploy>true</redeploy>
+		        <workerType>Micro</workerType>
 		        <environment>${environment}</environment>
 		    </configuration>
 		    <executions>
